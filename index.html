@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>To-Do List</title>
+    <link rel="stylesheet"
+          href="styles.css">
 </head>
 <body>
-
+<div class="container">
+    <div class="todo-app">
+        <header class="header">
+            <h2>To-Do List</h2>
+            <img src="./img/icon.png"
+                 alt="icon todo list">
+        </header>
+        <main class="main">
+            <div class="row">
+                <input type="text" placeholder="Add to your list" id="input-box">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container"></ul>
+        </main>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
